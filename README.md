@@ -20,6 +20,32 @@ A BERT-based NLP pipeline for structured information extraction from multi-cance
 - tokenizers==0.12.1
 - huggingface-hub==0.5.1
 
+## Usage
+Follow the steps below to run the full pipeline:
+1. Environment Setup
+Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+2. Model Download
+Download the pretrained models required for inference
+3. Data Preprocessing
+Clean and preprocess the raw annotation data
+(e.g., remove unnecessary records and adjust span positions):
+```bash
+python preprocessing/preprocess_annotations.py
+```
+4. Information Extraction
+Convert the preprocessed data into SQuAD format and run the extraction model:
+```bash
+python pipeline/run_extraction.py
+```
+5.Evaluation
+Evaluate the model predictions:
+```bash
+python evaluation/evaluate_predictions.py
+```
+
 ## Model Checkpoints
 Pre-trained ClinicalBERT checkpoints are available:
 | Cancer Type | Download |
