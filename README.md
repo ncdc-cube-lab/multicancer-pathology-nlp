@@ -29,12 +29,15 @@ pip install -r requirements.txt
 ```
 2. Model Download
 Download the pretrained model checkpoints from the [Model Checkpoints](#model-checkpoints) section and place them in the `models/` directory.
+```
    model/
    ├── Breast-clinicalbert/
    ├── Kidney-clinicalbert/
    ├── Thyroid-clinicalbert/
    ├── Liver-clinicalbert/
    └── Colorectal-clinicalbert/
+```
+
 4. Data Preprocessing
 Clean and preprocess the raw annotation data:
 ```bash
